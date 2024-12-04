@@ -581,7 +581,7 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 <tr>
 <td><strong><code class="inline-code">x = 3</code></strong></td>
 <td>Speichert einen einzelnen Zahlenwert</td>
-<td><code class="inline-code">alter = 40</code>  <br class="jop-noMdConv"/><code class="inline-code">function _draw()</code>  <br class="jop-noMdConv"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code class="inline-code">&nbsp;cls()</code>  <br class="jop-noMdConv"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code class="inline-code">&nbsp;print(alter,60,60)</code>  <br class="jop-noMdConv"/><code class="inline-code">end</code></td>
+<td><code class="inline-code">alter = 40</code>  <br class="jop-noMdConv"/><code class="inline-code">function _draw()</code>  <br class="jop-noMdConv"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code class="inline-code">&nbsp;cls()</code>  <br class="jop-noMdConv"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code class="inline-code">&nbsp;print(alter,60,60)</code>  <br class="jop-noMdConv"/><code class="inline-code">end</code></td>
 <td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAYAAAAGACAIAAAArpSLoAAACGklEQVR4Ae3dsQrDIBSG0fbiSznow+vga3UIZGi5hJa0FHIODiJO3/DPNwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgB+6S0BmzLVdequHL6/2P5AJCQADBBgg+EhvdTtSYIAAAwSQKxJwaMwlAt8QEgAGCLicIgGZ3urTy5hLFk4UEgAGCLicIgGnGHOJwLtCAsAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD8owdEPxLYTOu+XAAAABB0RVh0TG9kZVBORwAyMDExMDIyMeNZtsEAAAAASUVORK5CYII=" alt="untitled_3_1.png" width="128" height="128" class="jop-noMdConv"/></td>
 </tr>
 </tbody>
@@ -600,7 +600,7 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 <tr>
 <td><code class="inline-code">if ? then</code>  <br class="jop-noMdConv"/>&nbsp; <code class="inline-code">this</code>  <br class="jop-noMdConv"/><code class="inline-code">end</code></td>
 <td>Wenn die Bedingung <code class="inline-code">?</code> wahr ist, wird <code class="inline-code">this</code> ausgef&uuml;hrt.</td>
-<td><code class="inline-code">if a&gt;b then</code>  <br class="jop-noMdConv"/>&nbsp;&nbsp;<code class="inline-code">&nbsp;a=0</code>  <br class="jop-noMdConv"/><code class="inline-code">end</code></td>
+<td><code class="inline-code">if a&gt;b then</code>  <br class="jop-noMdConv"/>&nbsp;&nbsp;&nbsp;<code class="inline-code">&nbsp;a=0</code>  <br class="jop-noMdConv"/><code class="inline-code">end</code></td>
 </tr>
 </tbody>
 </table>
@@ -618,7 +618,7 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 <tr>
 <td><strong><code class="inline-code">_draw()</code></strong></td>
 <td>Wird 30 mal Pro Sekunde wiederholt. Alles was in dieser Funktion steht wird also unendlich mal wiederholt (loop). Hier werden alle Befehle ausgef&uuml;hrt, die den Bildschirninhalt ver&auml;ndern. Sie wird nach der <code class="inline-code">_update()</code>-Funktion ausgef&uuml;hrt.</td>
-<td><code class="inline-code">function _draw()</code>  <br class="jop-noMdConv"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code class="inline-code">&nbsp;cls(12)</code>  <br class="jop-noMdConv"/><code class="inline-code">circ(x,y,r)</code>  <br class="jop-noMdConv"/><code class="inline-code">end</code></td>
+<td><code class="inline-code">function _draw()</code>  <br class="jop-noMdConv"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code class="inline-code">&nbsp;cls(12)</code>  <br class="jop-noMdConv"/><code class="inline-code">circ(x,y,r)</code>  <br class="jop-noMdConv"/><code class="inline-code">end</code></td>
 </tr>
 </tbody>
 </table>
@@ -635,6 +635,26 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 <tr>
 <td><strong><code class="inline-code">flr(x)</code></strong>  <br class="jop-noMdConv"/><br class="jop-noMdConv"/>Rundet, indem sie alle Nachkommastellen abschneidet</td>
 <td><code class="inline-code">x</code>: Die Zahl die gerundet wird</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="joplin-table-wrapper">
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code class="inline-code">rect(x0,y0,x1,y1,[c])</code></strong>  <br class="jop-noMdConv"/><strong><code class="inline-code">rectfill(x0,y0,x1,y1,[c])</code></strong></td>
+<td><code class="inline-code">x0</code>: X-Position linke obere Ecke  <br class="jop-noMdConv"/><code class="inline-code">y0</code>: Y-Position linke obere Ecke  <br class="jop-noMdConv"/><code class="inline-code">x1</code>: X-Position rechte obere Ecke  <br class="jop-noMdConv"/><code class="inline-code">y1</code>: Y-Position rechte obere Ecke</td>
+<td><code class="inline-code">cls()</code>  <br class="jop-noMdConv"/><code class="inline-code">rect(20,40,50,60,6)</code>  <br class="jop-noMdConv"/><code class="inline-code">rectfill(80,60,120,90,6)</code></td>
+<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAYAAAAGACAIAAAArpSLoAAADFUlEQVR4Ae3dMW7EIABFQUDuabmKC/vwduGr0HICUsTaZqsoiS3WMxVytBL6RK+OvdUQQggh5vJ9ALhGMgEgQMDjxNept3p+ysUuwAWSCQABAh4nvn/qrZ5/y8VAwP9JJgAECHic+Dr1Vs9PudgFuEAyASBAwOPE3up5ysUcwJWSCQABAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOBn4oiX3vbDy71bl9kIjCWZABAg4HGmoW+/LrMn3PbDCAwqmQAQIECAAAQIECAAAQIECECAAAECECBAgAAECBAgAAECBAhAgAABAgQIQIAAAQIQIECAAAQIECAAAQIECECAAAECECBAgAAECBAgAAECBAgQIAABAgQIQIAAAQIQIECAAAQIECAAAQIECECAAAECECBAgAABAhAgQIAABAgQIAABAgQI4A9MQ99+2w9PiH+JG63L/JufJwsCdxEg4DbTiJdel9nLwQdIJgAECBAgAAECBAhAgAABAhAgQIAABAgQIAABAgQIQIAAAQIQIECAAAECECBAgAAECBAgAAECBAhAgAABAhAgQIAABAgQIAABAgQIQIAAAQIECECAAAECECBAgAAECBAgAAECBAhAgAABAhAgQIAABAgQIECAAAQIECAAAQIECECAAAECECBAgAAECBAgAAECBAhAgAABAhAgQIAAAQIQIECAAAQIECAAAQIECECAAAECECBAgAAECBAgAAECBAgQIAABAgQIQIAAAQIQIECAAAQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPgoX7yGHFHpo2oFAAAAEHRFWHRMb2RlUE5HADIwMTEwMjIx41m2wQAAAABJRU5ErkJggg==" alt="untitled_2_4.png" width="128" height="128" class="jop-noMdConv"/></td>
 </tr>
 </tbody>
 </table>
