@@ -570,7 +570,7 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 <p>Du bist auf einem Spieleabend und ihr wollt eine Partie Risiko spielen. Leider fehlen im Spiel die W&uuml;rrfel und ihr k&ouml;nnt im ganzen Haus keinen W&uuml;rfel auftreiben. Leider gibt es gerade auch kein Internet, weil ein Sturm die Leitung besch&auml;digt hat, so dass ihr auch keine W&uuml;rfel-App herunterladen k&ouml;nnt. Zum Gl&uuml;ck hast du aber dein GameBoy und eine kleine Bluetooth-Tastatur dabei, so dass du kurzerhand entscheidest, einen W&uuml;rfel in Pico-8 zu programmieren.</p>
 <h3 id="mindestanforderungen-an-den-w&uuml;rfel">Mindestanforderungen an den W&uuml;rfel:</h3>
 <ul>
-<li>Druch Knopfdruck wird das W&uuml;rfeln ausgel&ouml;st.</li>
+<li>Durch Knopfdruck wird das W&uuml;rfeln ausgel&ouml;st.</li>
 <li>Der W&uuml;rfel gibt Zahlen zwischen 1 und 6 aus.</li>
 </ul>
 <h3 id="zusatz-features">Zusatz-Features:</h3>
@@ -611,7 +611,7 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 <tr>
 <td><strong><code class="inline-code">_draw()</code></strong></td>
 <td>Wird 30 mal Pro Sekunde wiederholt. Alles was in dieser Funktion steht wird also unendlich mal wiederholt (loop). Hier werden alle Befehle ausgef&uuml;hrt, die den Bildschirninhalt ver&auml;ndern. Sie wird nach der <code class="inline-code">_update()</code>-Funktion ausgef&uuml;hrt.</td>
-<td><code class="inline-code">function _draw()</code>  <br class="jop-noMdConv"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code class="inline-code">&nbsp;cls(12)</code>  <br class="jop-noMdConv"/><code class="inline-code">circ(x,y,r)</code>  <br class="jop-noMdConv"/><code class="inline-code">end</code></td>
+<td><code class="inline-code">function _draw()</code>  <br class="jop-noMdConv"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code class="inline-code">&nbsp;cls(12)</code>  <br class="jop-noMdConv"/><code class="inline-code">circ(x,y,r)</code>  <br class="jop-noMdConv"/><code class="inline-code">end</code></td>
 </tr>
 </tbody>
 </table>
@@ -630,7 +630,7 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 <tr>
 <td><strong><code class="inline-code">btnp([b, [p]])</code></strong>  <br class="jop-noMdConv"/><br class="jop-noMdConv"/>Ist ein Frame lang wahr, wenn der Knopf b vom Spieler p gedr&uuml;ckt wurde.</td>
 <td><strong>b</strong>: Knopf-Nummer  <br class="jop-noMdConv"/><strong>p</strong>: Player-Nummer</td>
-<td><code class="inline-code">out = 0</code>  <br class="jop-noMdConv"/><code class="inline-code">function _draw()</code>  <br class="jop-noMdConv"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code class="inline-code">&nbsp;&nbsp;if btnp(0) then</code>  <br class="jop-noMdConv"/>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;<code class="inline-code">&nbsp;&nbsp; &nbsp;out= out+1</code>  <br class="jop-noMdConv"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code class="inline-code">&nbsp;&nbsp;end</code>  <br class="jop-noMdConv"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code class="inline-code">&nbsp;&nbsp;cls()</code>  <br class="jop-noMdConv"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code class="inline-code">&nbsp;&nbsp;print(out)</code>  <br class="jop-noMdConv"/><code class="inline-code">end</code></td>
+<td><code class="inline-code">out = 0</code>  <br class="jop-noMdConv"/><code class="inline-code">function _draw()</code>  <br class="jop-noMdConv"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code class="inline-code">&nbsp;&nbsp;if btnp(0) then</code>  <br class="jop-noMdConv"/>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;<code class="inline-code">&nbsp;&nbsp; &nbsp;out= out+1</code>  <br class="jop-noMdConv"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code class="inline-code">&nbsp;&nbsp;end</code>  <br class="jop-noMdConv"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code class="inline-code">&nbsp;&nbsp;cls()</code>  <br class="jop-noMdConv"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code class="inline-code">&nbsp;&nbsp;print(out)</code>  <br class="jop-noMdConv"/><code class="inline-code">end</code></td>
 <td>Jeder Knopfdruck erh&ouml;ht &quot;out&quot; um 1</td>
 </tr>
 </tbody>
