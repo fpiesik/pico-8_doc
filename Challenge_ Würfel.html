@@ -575,7 +575,7 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 </ul>
 <h3 id="zusatz-features">Zusatz-Features:</h3>
 <ul>
-<li>Man kann mit mehreren W&uuml;rfeln gleichzeitig w&uuml;rfeln.</li>
+<li>Man kann mit drei roten und zwei blauen W&uuml;rfeln gleichzeitig w&uuml;rfeln.</li>
 <li>Man einstellen, was f&uuml;r ein W&uuml;rfel (W6, W20) man benutzen m&ouml;chte.</li>
 <li>Das Ergebnis wird durch das Bild eines W&uuml;rfeln dargestellt.</li>
 <li>Das W&uuml;rfeln wird als Animation dargestellt.</li>
@@ -611,7 +611,7 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 <tr>
 <td><strong><code class="inline-code">_draw()</code></strong></td>
 <td>Wird 30 mal Pro Sekunde wiederholt. Alles was in dieser Funktion steht wird also unendlich mal wiederholt (loop). Hier werden alle Befehle ausgef&uuml;hrt, die den Bildschirninhalt ver&auml;ndern. Sie wird nach der <code class="inline-code">_update()</code>-Funktion ausgef&uuml;hrt.</td>
-<td><code class="inline-code">function _draw()</code>  <br class="jop-noMdConv"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code class="inline-code">&nbsp;cls(12)</code>  <br class="jop-noMdConv"/><code class="inline-code">circ(x,y,r)</code>  <br class="jop-noMdConv"/><code class="inline-code">end</code></td>
+<td><code class="inline-code">function _draw()</code>  <br class="jop-noMdConv"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code class="inline-code">&nbsp;cls(12)</code>  <br class="jop-noMdConv"/><code class="inline-code">circ(x,y,r)</code>  <br class="jop-noMdConv"/><code class="inline-code">end</code></td>
 </tr>
 </tbody>
 </table>
@@ -630,7 +630,7 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 <tr>
 <td><strong><code class="inline-code">btnp([b, [p]])</code></strong>  <br class="jop-noMdConv"/><br class="jop-noMdConv"/>Ist ein Frame lang wahr, wenn der Knopf b vom Spieler p gedr&uuml;ckt wurde.</td>
 <td><strong>b</strong>: Knopf-Nummer  <br class="jop-noMdConv"/><strong>p</strong>: Player-Nummer</td>
-<td><code class="inline-code">out = 0</code>  <br class="jop-noMdConv"/><code class="inline-code">function _draw()</code>  <br class="jop-noMdConv"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code class="inline-code">&nbsp;&nbsp;if btnp(0) then</code>  <br class="jop-noMdConv"/>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;<code class="inline-code">&nbsp;&nbsp; &nbsp;out= out+1</code>  <br class="jop-noMdConv"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code class="inline-code">&nbsp;&nbsp;end</code>  <br class="jop-noMdConv"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code class="inline-code">&nbsp;&nbsp;cls()</code>  <br class="jop-noMdConv"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code class="inline-code">&nbsp;&nbsp;print(out)</code>  <br class="jop-noMdConv"/><code class="inline-code">end</code></td>
+<td><code class="inline-code">out = 0</code>  <br class="jop-noMdConv"/><code class="inline-code">function _draw()</code>  <br class="jop-noMdConv"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code class="inline-code">&nbsp;&nbsp;if btnp(0) then</code>  <br class="jop-noMdConv"/>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;<code class="inline-code">&nbsp;&nbsp; &nbsp;out= out+1</code>  <br class="jop-noMdConv"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code class="inline-code">&nbsp;&nbsp;end</code>  <br class="jop-noMdConv"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code class="inline-code">&nbsp;&nbsp;cls()</code>  <br class="jop-noMdConv"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code class="inline-code">&nbsp;&nbsp;print(out)</code>  <br class="jop-noMdConv"/><code class="inline-code">end</code></td>
 <td>Jeder Knopfdruck erh&ouml;ht &quot;out&quot; um 1</td>
 </tr>
 </tbody>
@@ -684,6 +684,18 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 </tbody>
 </table>
 </div>
+<p>&nbsp;</p>
+<h2 id="zwischergebnis">Zwischergebnis</h2>
+<p><code class="inline-code">max_au=6 --zahl der augen</code><br/>
+<code class="inline-code">erg=0 --ergebnis</code></p>
+<p><code class="inline-code">function _draw()</code><br/>
+&nbsp;<code class="inline-code">&nbsp;cls()</code><br/>
+&nbsp;<code class="inline-code">&nbsp;if btnp(4) then</code><br/>
+&nbsp;&nbsp;<code class="inline-code">&nbsp;&nbsp;erg=rnd(max_au)</code><br/>
+&nbsp;&nbsp;<code class="inline-code">&nbsp;&nbsp;erg=flr(erg) + 1</code><br/>
+&nbsp;<code class="inline-code">&nbsp;end</code><br/>
+&nbsp;<code class="inline-code">&nbsp;print(erg,60,60)</code><br/>
+<code class="inline-code">end</code></p>
 </div></div>
 					</body>
 				</html>
